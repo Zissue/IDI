@@ -28,6 +28,8 @@ void MyGLWidget::initializeGL ()
 
   FOVoffset = 0;
 
+  fovsliderQT = 0;
+
   // xold = 0;
   // yold = 0;
   delta = M_PI / 180.0;
@@ -382,4 +384,17 @@ void MyGLWidget::calcCenterScene() {
   sceneCenter.x = (sceneMax.x + sceneMin.x)/2.0;
   sceneCenter.y = (sceneMax.y + sceneMin.y)/2.0;
   sceneCenter.z = (sceneMax.z + sceneMin.z)/2.0;
+}
+
+void MyGLWidget::FOVslider(int va) {
+  makeCurrent();          // IMPORTANT
+
+  int dv = va - fovsliderQT;
+
+  FOVoffset += 0.05 * dv * (-1);
+
+  projectTransform();
+  update();               // IMPORTANT
+
+  fovsliderQT = va;
 }

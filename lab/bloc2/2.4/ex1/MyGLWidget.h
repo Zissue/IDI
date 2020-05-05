@@ -16,6 +16,9 @@ class MyGLWidget : public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
     MyGLWidget (QWidget *parent=0);
     ~MyGLWidget ();
 
+  public slots:
+    void FOVslider(int va);
+
   protected:
     // initializeGL - Aqui incluim les inicialitzacions del contexte grafic.
     virtual void initializeGL ( );
@@ -90,6 +93,7 @@ class MyGLWidget : public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
     float xold, yold;
     float delta;
 
+    int fovsliderQT;
     // Zoom
     float FOVoffset;
 

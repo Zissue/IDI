@@ -53,13 +53,14 @@ vec3 Phong (vec3 NormSCO, vec3 L, vec4 vertSCO)
 void main()
 {	
 	// Deixem la pos del focus en SCA, afegim un 1 per deixar-ho a coords homogenies
-    vec4 focusSCA = vec4(posFocus, 1.0);
-    // Direccio de la llum
-    vec3 L = focusSCA.xyz - vertexFrag.xyz;
+  vec4 focusSCA = vec4(posFocus, 1.0);
+  
+  // Direccio de la llum
+  vec3 L = focusSCA.xyz - vertexFrag.xyz;
+  vec3 NORM = normalFrag;
 
-	// Unicament normalitzem NORM i L, res mes
-    vec3 NORM = normalize(normalFrag);
-    L = normalize(L);
+	// Unicament normalitzem L en el frag, res mes
+  L = normalize(L);
 
 	vec3 fcolor = Phong(NORM, L, vec4(vertexFrag, 1.0));
 

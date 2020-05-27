@@ -26,7 +26,7 @@ void main()
 
     // Passem el vector normal a SCO
     mat3 NormalMat = inverse(transpose(mat3(view * TG)));
-    normalFrag = NormalMat * normal;
+    normalFrag = normalize(NormalMat * normal);
 
     // Passem la pos dels vertex a SCO
     vec4 vertexSCO = view * TG * vec4(vertex, 1.0);

@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = Bloc3_Exemple1.0.0
-DISTDIR = /home/zixu/Desktop/idi/lab/bloc3/3.1/ex1/.tmp/Bloc3_Exemple1.0.0
+DISTDIR = /home/zixu/Desktop/idi/lab/bloc3/3.1/ex1-2/.tmp/Bloc3_Exemple1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) /usr/lib/libQt5OpenGL.so /usr/lib/libQt5Widgets.so /usr/lib/libQt5Gui.so /usr/lib/libQt5Core.so -lGL -lpthread   
@@ -803,13 +803,13 @@ moc_MyForm.cpp: MyForm.h \
 		Model/model.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /home/zixu/Desktop/idi/lab/bloc3/3.1/ex1/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1 -I/usr/include/glm -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1/Model -I/usr/include/qt -I/usr/include/qt/QtOpenGL -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/9.3.0 -I/usr/include/c++/9.3.0/x86_64-pc-linux-gnu -I/usr/include/c++/9.3.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed -I/usr/include MyForm.h -o moc_MyForm.cpp
+	/usr/bin/moc $(DEFINES) --include /home/zixu/Desktop/idi/lab/bloc3/3.1/ex1-2/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1-2 -I/usr/include/glm -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1-2/Model -I/usr/include/qt -I/usr/include/qt/QtOpenGL -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/9.3.0 -I/usr/include/c++/9.3.0/x86_64-pc-linux-gnu -I/usr/include/c++/9.3.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed -I/usr/include MyForm.h -o moc_MyForm.cpp
 
 moc_MyGLWidget.cpp: MyGLWidget.h \
 		Model/model.h \
 		moc_predefs.h \
 		/usr/bin/moc
-	/usr/bin/moc $(DEFINES) --include /home/zixu/Desktop/idi/lab/bloc3/3.1/ex1/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1 -I/usr/include/glm -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1/Model -I/usr/include/qt -I/usr/include/qt/QtOpenGL -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/9.3.0 -I/usr/include/c++/9.3.0/x86_64-pc-linux-gnu -I/usr/include/c++/9.3.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed -I/usr/include MyGLWidget.h -o moc_MyGLWidget.cpp
+	/usr/bin/moc $(DEFINES) --include /home/zixu/Desktop/idi/lab/bloc3/3.1/ex1-2/moc_predefs.h -I/usr/lib/qt/mkspecs/linux-g++ -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1-2 -I/usr/include/glm -I/home/zixu/Desktop/idi/lab/bloc3/3.1/ex1-2/Model -I/usr/include/qt -I/usr/include/qt/QtOpenGL -I/usr/include/qt/QtWidgets -I/usr/include/qt/QtGui -I/usr/include/qt/QtCore -I/usr/include/c++/9.3.0 -I/usr/include/c++/9.3.0/x86_64-pc-linux-gnu -I/usr/include/c++/9.3.0/backward -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include -I/usr/local/include -I/usr/lib/gcc/x86_64-pc-linux-gnu/9.3.0/include-fixed -I/usr/include MyGLWidget.h -o moc_MyGLWidget.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
